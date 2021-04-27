@@ -20,6 +20,7 @@ class SocialType(DjangoObjectType):
 
     class Meta:
         model = social_models.UserSocialAuth
+        skip_registry = True
 
     def resolve_extra_data(self, info, **kwargs):
         self.extra_data.pop('access_token', None)
