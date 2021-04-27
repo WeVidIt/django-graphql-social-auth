@@ -23,3 +23,5 @@ __pycache__
 /build
 /coverage.xml
 /dist
+/venv
+.idea
