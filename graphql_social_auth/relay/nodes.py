@@ -9,6 +9,7 @@ class SocialNode(types.SocialType):
     class Meta:
         model = social_models.UserSocialAuth
         interfaces = [relay.Node]
+        skip_registry = True
         filter_fields = {
             'uid': ['exact', 'in'],
             'provider': ['exact', 'in'],
